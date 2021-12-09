@@ -1,0 +1,38 @@
+.body--viajes{
+    //display: flex;
+    min-height: 100vh;
+    //flex-direction: row;
+    margin:0;
+}
+
+.container--viajes{
+    //display: flex;
+    flex-direction: column;
+    //flex: 5;
+}
+
+.item--viajes{
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    min-height: 700px;
+    font-size: $font-big;
+}
+
+
+
+.item--viajes--spacex{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url(../images/viajes/spaceXBack.jpg);
+}
+
+.item--viajes--blue-origin{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url(../images/viajes/blueOriginBack.jpg);
+}
+
+.item--viajes--virgin-galactic{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url(../images/viajes/virginGalacticBack.jpg);
+}
+
+.item__ul__ul__li--viajes{
+    border-bottom: 1px solid white;
+}

@@ -1,0 +1,438 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+/**
+ * Import variables
+ */
+@font-face {
+  font-family: ddin;
+  src: url(D-DIN.19940be4.otf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: ddin;
+  src: url(D-DIN-Bold.84af2dff.otf);
+  font-weight: bold;
+}
+/**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: black;
+}
+.header--home {
+  background-color: black;
+  color: white;
+  font-size: 1.953em;
+}
+.header--home .header__h1 {
+  display: inline-block;
+  position: absolute;
+  left: 40%;
+  top: 2%;
+  font-size: 6vw;
+}
+@media (min-width: 1025px) {
+  .header--home .header__h1 {
+    top: -6%;
+  }
+}
+.header__img--home {
+  width: 10%;
+  display: inline;
+}
+.item--home {
+  height: 33vh;
+  width: 49%;
+  background-color: #000000;
+  margin-bottom: 1%;
+  border: 1px solid white;
+}
+.clip-svg {
+  clip-path: url(#myClip);
+  width: 100%;
+  height: 100%;
+}
+.clip-svg__text {
+  font-size: 8vh;
+}
+.item--home__countdown {
+  position: absolute;
+  bottom: 125px;
+  left: 16px;
+  width: 92%;
+}
+@media (min-width: 401px) {
+  .item--home__countdown {
+    position: absolute;
+    bottom: 235px;
+    left: 16px;
+    width: 92%;
+  }
+}
+.item--home__countdown__span {
+  float: left;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.item__figure {
+  margin: 0;
+  height: 100%;
+}
+.item__figure__img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+.item--home:nth-child(3n) {
+  width: 100%;
+}
+.item__figure__a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.563em;
+  font-weight: bold;
+  padding-left: 1%;
+}
+.body-interior {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  margin: 0;
+}
+.body--viajes {
+  min-height: 100vh;
+  margin: 0;
+}
+.container--viajes {
+  flex-direction: column;
+}
+.item--viajes {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 700px;
+  font-size: 1.563em;
+}
+.item--viajes--spacex {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(spaceXBack.cc95cb2c.jpg);
+}
+.item--viajes--blue-origin {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(blueOriginBack.334fc032.jpg);
+}
+.item--viajes--virgin-galactic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(virginGalacticBack.ea03a7c7.jpg);
+}
+.item__ul__ul__li--viajes {
+  border-bottom: 1px solid white;
+}
+.container--detalle {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-size: 1.563em;
+}
+@media (max-width: 480px) {
+  .container--detalle {
+    font-size: 1em;
+    font-weight: bolder;
+  }
+}
+.article__img {
+  width: 100%;
+}
+.item--detalle {
+  min-height: 700px;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item--detalle--factory {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), white), url(spaceXFactory.7f934566.jpg);
+}
+.item--detalle--crewDragon {
+  color: white;
+}
+.item--detalle--inspiration4 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), white), url(spaceXInspiration4.41e3b9ad.jpg);
+}
+.item--detalle--nosotros {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(nosotrosUniverse.0159a31f.jpg);
+}
+.item--detalle--nosotros--imagen-cabecera {
+  background-image: url(nosotrosViaLactea.8bdada80.jpg);
+  min-height: 500px;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+}
+.article--nosotros {
+  width: 70%;
+  margin: auto;
+  font-size: "ddin", Verdana, sans-serif;
+  line-height: 1.7em;
+}
+.article__h2--nosotros {
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .figure--nosotros {
+    width: 60%;
+    margin: auto;
+  }
+}
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.svgCabevera {
+  animation-duration: 2s;
+  animation-name: bounceIn;
+}
+.item--noticias {
+  color: #ffffff;
+}
+.container--destinos {
+  flex-direction: column;
+}
+@media (min-width: 1025px) {
+  .container--destinos {
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+  }
+}
+.item--destinos {
+  color: white;
+}
+.figure__image--destinos {
+  margin: auto;
+  width: 100%;
+}
+.item--destinos p {
+  width: 70%;
+  margin: auto;
+}
+.container--enlaces {
+  color: white;
+}
+.item--enlaces {
+  width: 80%;
+}
+.a--enlaces:link {
+  color: #00ffff;
+  text-decoration: none;
+}
+.a--enlaces:visited {
+  color: #00ffff;
+}
+.a--enlaces:focus {
+  color: #00ffff;
+}
+.a--enlaces:hover {
+  color: gray;
+}
+.a--enlaces:active {
+  color: #00ffff;
+}
+/**
+ * Import modules
+ * 
+ */
+.nav {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 0.64em;
+}
+.nav__ul__li__a {
+  text-decoration: none;
+  font-family: "ddin", Verdana, sans-serif;
+  font-size: 1.563em;
+  text-transform: uppercase;
+}
+.nav__ul__li__a:link {
+  color: #ffffff;
+}
+.nav__ul__li__a:hover {
+  color: #808080;
+}
+.nav__ul__li {
+  list-style: none;
+}
+.nav__ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  gap: 15px;
+}
+.footer {
+  padding: 2%;
+  background-color: #000000;
+  color: #ffffff;
+}
+.footer__ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  gap: 15px;
+}
+.footer__ul__li {
+  list-style: none;
+}
+.footer__a {
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #ffffff;
+  text-decoration: none;
+}
+/**
+ * Import base
+ * 
+ */
+.body {
+  font-family: "ddin", Verdana, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-color: black;
+}
+@media (min-width: 1025px) {
+  .body {
+    width: 60%;
+    margin: auto;
+    background-color: black;
+  }
+}
+.header {
+  padding: 1em;
+  background-color: black;
+  color: white;
+  font-size: 1.953em;
+}
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+a:focus {
+  color: gray;
+}
+a:hover {
+  color: gray;
+}
+a:active {
+  color: #00ffff;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #000000;
+  flex: 1;
+  padding: 1%;
+}
+.item__h2 {
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+.item__ul {
+  margin-top: 0;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-bottom: 0;
+}
+.item__ul__ul {
+  padding-left: 0.5em;
+  padding-right: 1em;
+}
+.item__ul__ul__li {
+  list-style: none;
+  margin-bottom: 0;
+}
+.item__ul__li__a {
+  font-size: 3.052em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/*.item__ul__li__a:link{
+    color: #ffffff;
+}*/
+.item__ul__ul__li__ul {
+  padding-left: 0.5em;
+}
+.item__ul__li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+.item__ul__ul__li__ul__li {
+  list-style: square;
+  margin-bottom: 0.7em;
+}
+.article {
+  padding-left: 1em;
+  padding-right: 2em;
+}
+.article__h2 {
+  text-align: left;
+}
+.video {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-left: 1em;
+  position: relative;
+  height: 0;
+  margin-bottom: 0.5em;
+}
+.video__iframe {
+  margin: auto;
+  height: 100%;
+  width: 89%;
+  position: absolute;
+}
+figure {
+  width: 100%;
+  margin-left: 0;
+}
+.figure__image {
+  max-width: 100%;
+  height: auto;
+}
+.figure__image__figcaption {
+  font-size: 1em;
+  text-align: center;
+}
+.figure__image--dark {
+  filter: contrast(400%);
+}
+/**
+ * Do NOT include anything else in this file!
+ */
+/*# sourceMappingURL=index.bfdccb96.css.map */

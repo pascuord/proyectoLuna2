@@ -1,0 +1,35 @@
+.container--detalle {
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+    flex: 1;
+    font-size: $font-big;
+
+    @media(max-width:480px){
+      font-size: $font-small;
+      font-weight: bolder;
+    }
+  }
+
+  .article__img{
+    width: 100%;
+  }
+  
+  .item--detalle {
+    min-height: 700px;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .item--detalle--factory{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 1)) ,url(../images/detalles/spaceXFactory.jpg);
+  }
+
+  .item--detalle--crewDragon{
+    color: white;
+  }
+
+  .item--detalle--inspiration4{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 1)) ,url(../images/detalles/spaceXInspiration4.jpg);
+  }
