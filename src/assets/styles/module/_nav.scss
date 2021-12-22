@@ -1,0 +1,36 @@
+.nav{
+    background-color: #000000;
+    color: #ffffff;
+    font-size: $font-small-small;
+}
+
+.nav__ul__li__a{
+    text-decoration: none;
+    font-family: $font;
+    font-size: $font-big;
+    text-transform: uppercase;
+}
+
+.nav__ul__li__a:link{
+    color: #ffffff;
+}
+
+.nav__ul__li__a:hover{
+    color: #808080;
+}
+
+.nav__ul__li{
+    list-style: none;
+}
+
+.nav__ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    gap: 15px;
+}
+
+

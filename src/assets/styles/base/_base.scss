@@ -1,0 +1,143 @@
+.body {
+    font-family: $font;
+    font-size: 16px;
+    margin: 0;
+    background-color: black;
+
+    @media (min-width: 1025px) {
+        width: 60%;
+        margin: auto;
+        background-color: black;
+    }
+}
+
+.header {
+    padding: 1em;
+    background-color: black;
+    color: white;
+    //text-align: center;
+    //background-image: url(../images/nosotros/nosotrosViaLactea.jpg);
+    font-size: $font-big-big;
+}
+
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:focus {
+    color: gray;
+}
+
+a:hover {
+    color: gray;
+}
+
+a:active {
+    color: #00ffff;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #000000;
+    flex: 1;
+    padding: 1%;
+}
+
+.item__h2 {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.item__ul {
+    margin-top: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-bottom: 0;
+}
+
+.item__ul__ul {
+    padding-left: 0.5em;
+    padding-right: 1em;
+}
+
+.item__ul__ul__li {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.item__ul__li__a {
+    font-size: $font-extra-big;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*.item__ul__li__a:link{
+    color: #ffffff;
+}*/
+
+.item__ul__ul__li__ul {
+    padding-left: 0.5em;
+}
+
+.item__ul__li {
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+.item__ul__ul__li__ul__li {
+    list-style: square;
+    margin-bottom: 0.7em;
+}
+
+
+
+.article {
+    padding-left: 1em;
+    padding-right: 2em;
+}
+
+.article__h2{
+    text-align: left;
+}
+
+.video {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-left: 1em;
+    position: relative;
+    height: 0;
+    margin-bottom: 0.5em;
+}
+
+.video__iframe {
+    margin: auto;
+    height: 100%;
+    width: 89%;
+    position: absolute;
+}
+
+figure {
+    width: 100%;
+    margin-left: 0;
+}
+
+.figure__image {
+    max-width: 100%;
+    height: auto;
+}
+
+.figure__image__figcaption {
+    font-size: $font-small;
+    text-align: center;
+}
+.figure__image--dark {
+    filter: contrast(400%);
+}

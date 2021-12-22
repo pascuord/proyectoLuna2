@@ -1,0 +1,26 @@
+.footer {
+    padding: 2%;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.footer__ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    gap: 15px;
+}
+
+.footer__ul__li{
+    list-style: none;
+}
+
+.footer__a {
+    text-transform: uppercase;
+    font-size: $font-small;
+    color: #ffffff;
+    text-decoration: none;
+}
