@@ -9,11 +9,13 @@
   font-family: ddin;
   src: url(D-DIN.19940be4.otf);
   font-weight: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: ddin;
   src: url(D-DIN-Bold.84af2dff.otf);
   font-weight: bold;
+  font-display: swap;
 }
 /**
  * Import npm dependencies

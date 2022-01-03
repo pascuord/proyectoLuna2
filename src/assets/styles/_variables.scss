@@ -2,12 +2,14 @@
     font-family: ddin;
     src: url(../fonts/d-din-font/D-DIN.otf);
     font-weight: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: ddin;
     src: url(../fonts/d-din-font/D-DIN-Bold.otf);
     font-weight: bold;
+    font-display: swap;
 }
 
 $font-noweight:"ddin-noweight", Verdana, sans-serif;
