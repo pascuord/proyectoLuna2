@@ -57,8 +57,14 @@
             <img
               loading="lazy"
               class="item__figure__img"
-              src="assets/images/portada/imgPlanetas.jpg?as=webp"
-              alt="Tipos de viajes"
+              srcset="
+                assets/images/portada/imgPlanetas.webp     1450w,
+                assets/images/portada/imgPlanetas_640.webp  640w
+              "
+              sizes="(max-width: 2000px) 1450px,
+                      (max-width: 480px) 640px"
+              src="assets/images/portada/imgPlanetas.webp"
+              alt="Destinos"
             />
           </a>
         </figure>
@@ -70,10 +76,12 @@
             <img
               loading="lazy"
               class="item__figure__img"
-              srcset="assets/images/portada/imgGalaxia.jpg?as=webp 1280w,
-                      assets/images/portada/imgGalaxia_640.jpg?as=webp 640w"
+              srcset="
+                assets/images/portada/imgGalaxia.jpg?as=webp     1280w,
+                assets/images/portada/imgGalaxia_640.jpg?as=webp  640w
+              "
               sizes="(max-width: 2000px) 1280px,
-                     (max-widthh: 480px) 640px"
+                     (max-width: 480px) 640px"
               src="assets/images/portada/imgGalaxia.jpg?as=webp"
               alt="Noticias"
             />
@@ -93,7 +101,7 @@
                 assets/images/portada/imgRocket_640.jpg?as=webp  640w
               "
               sizes="(max-width: 2000px) 1280px,
-                      (max-widthh: 480px) 640px"
+                      (max-width: 480px) 640px"
               src="assets/images/portada/imgRocket.jpg?as=webp"
               alt="Enlaces"
             />
@@ -112,7 +120,7 @@
                 assets/images/portada/imgPassenger_640.jpeg?as=webp  640w
               "
               sizes="(max-width: 2000px) 2470px,
-                                                                (max-width: 480px) 640px"
+                     (max-width: 480px) 640px"
               src="assets/images/portada/imgPassenger.jpeg?as=webp"
               alt="Sobre nosotros"
             />
