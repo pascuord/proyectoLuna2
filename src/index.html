@@ -55,7 +55,12 @@
     <div class="item--home">
       <figure class="item__figure">
         <a href="enlaces.html" class="item__figure__a">Enlaces
-          <img loading="lazy" class="item__figure__img" src="assets/images/portada/imgRocket.jpg?as=webp" alt="Tipos de viajes">
+          <!--img loading="lazy" class="item__figure__img" src="assets/images/portada/imgRocket.jpg?as=webp" alt="Tipos de viajes"-->
+          <img srcset="assets/images/portada/imgRocket.jpg?as=webp 1280w,
+                      assets/images/portada/imgRocket_640.jpg?as=webp 640w"
+               sizes="(max-width: 2000px) 1280px,
+                      (max-widthh: 480px) 640px"          
+              src="assets/images/portada/imgRocket.jpg?as=webp" alt="Enlaces">
         </a>
       </figure>
     </div>
@@ -67,7 +72,7 @@
                                                         sizes="(max-width: 2000px) 2470px,
                                                                 (max-width: 480px) 640px"
                                                         src="assets/images/portada/imgPassenger.jpeg?as=webp"
-                                                        alt="Tipos de viajes">
+                                                        alt="Sobre nosotros">
         </a>
       </figure>
     </div>
