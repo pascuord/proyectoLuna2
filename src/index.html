@@ -16,9 +16,12 @@
         ><img
           loading="lazy"
           class="header__img--home"
+          srcset="
+            assets/images/moonLogo.png?as=webp    1x,
+            assets/images/moonLogo_50.png?as=webp 2x,
+            assets/images/moonLogo_75.png?as=webp 3x
+          "
           src="assets/images/moonLogo.png?as=webp"
-          width="32"
-          height="32"
           alt="Logo"
       /></a>
       <h1 id="title" class="header__h1">Moon Trip</h1>
@@ -37,8 +40,6 @@
               assets/images/portada/imgRocket_160.jpg?as=webp 1x
             "
             src="assets/images/portada/imgRocket.jpg?as=webp"
-            width="640"
-            height="360"
             alt="Rocket"
           />
 
@@ -66,7 +67,7 @@
             >Destinos
             <img
               loading="lazy"
-              class="item__figure__img"
+              class="item__figure__img clip-img-svg"
               srcset="
                 assets/images/portada/imgPlanetas.webp            1x,
                 assets/images/portada/imgPlanetas_640.webp        2x,
@@ -78,6 +79,13 @@
               height="360"
               alt="Destinos"
             />
+            <svg height="0" width="0">
+              <defs>
+                <clipPath id="myClipImgPlanets">
+                  <circle cx="180" cy="180" r="150" />
+                </clipPath>
+              </defs>
+            </svg>
           </a>
         </figure>
       </div>
@@ -167,9 +175,12 @@
         ><img
           loading="lazy"
           class="header__img--home"
+          srcset="
+            assets/images/moonLogo.png?as=webp    1x,
+            assets/images/moonLogo_50.png?as=webp 2x,
+            assets/images/moonLogo_75.png?as=webp 3x
+          "
           src="assets/images/moonLogo.png?as=webp"
-          width="32"
-          height="32"
           alt="Logo"
       /></a>
     </footer>

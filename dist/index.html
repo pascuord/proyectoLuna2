@@ -12,14 +12,14 @@
 
   <body class="body">
     <header class="header header--home">
-      <a href="/index.html"><img loading="lazy" class="header__img--home" src="/moonLogo.d10df8d8.webp" width="32" height="32" alt="Logo"></a>
+      <a href="/index.html"><img loading="lazy" class="header__img--home" srcset="/moonLogo.d10df8d8.webp    1x,/moonLogo_50.13f42a66.webp 2x,/moonLogo_75.1f5dd798.webp 3x" src="/moonLogo.d10df8d8.webp" alt="Logo"></a>
       <h1 id="title" class="header__h1">Moon Trip</h1>
       <span id="countdown"></span>
     </header>
     <div class="container">
       <div class="item--home">
         <a href="/viajes.html">
-          <img loading="lazy" class="clip-svg" srcset="/imgRocket.a81309a2.webp     4x,/imgRocket_640.e89c201d.webp 3x,/imgRocket_320.26c1cb8c.webp 2x,/imgRocket_160.8f1ca1e3.webp 1x" src="/imgRocket.a81309a2.webp" width="640" height="360" alt="Rocket">
+          <img loading="lazy" class="clip-svg" srcset="/imgRocket.a81309a2.webp     4x,/imgRocket_640.e89c201d.webp 3x,/imgRocket_320.26c1cb8c.webp 2x,/imgRocket_160.8f1ca1e3.webp 1x" src="/imgRocket.a81309a2.webp" alt="Rocket">
 
           <svg width="20%" height="20%">
             <defs>
@@ -35,14 +35,21 @@
       <div class="item--home">
         <figure class="item__figure">
           <a href="/destinos.html" class="item__figure__a">Destinos
-            <img loading="lazy" class="item__figure__img" srcset="/imgPlanetas.c5bff887.webp            4x,/imgPlanetas_640.1e1c8b4a.webp        3x,/imgPlanetas_320.be3d2312.webp 2x,/imgPlanetas_160.45678f60.webp 1x" src="/imgPlanetas.c5bff887.webp" width="640" height="360" alt="Destinos">
+            <img loading="lazy" class="item__figure__img clip-img-svg" srcset="/imgPlanetas.c5bff887.webp            1x,/imgPlanetas_640.1e1c8b4a.webp        2x,/imgPlanetas_320.be3d2312.webp 3x,/imgPlanetas_160.45678f60.webp 4x" src="/imgPlanetas.c5bff887.webp" width="640" height="360" alt="Destinos">
+            <svg height="0" width="0">
+              <defs>
+                <clippath id="myClipImgPlanets">
+                  <circle cx="180" cy="180" r="150"></circle>
+                </clippath>
+              </defs>
+            </svg>
           </a>
         </figure>
       </div>
       <div class="item--home">
         <figure class="item__figure">
           <a href="/noticias.html" class="item__figure__a">Noticias
-            <img class="item__figure__img" srcset="/imgGalaxia.e25d503e.webp     4x,/imgGalaxia_640.827bf961.webp 3x,/imgGalaxia_320.ee0cd320.webp 2x,/imgGalaxia_160.26edab0c.webp 1x" src="/imgGalaxia.e25d503e.webp" width="640" height="360" alt="Noticias">
+            <img class="item__figure__img" srcset="/imgGalaxia.e25d503e.webp     1x,/imgGalaxia_640.827bf961.webp 2x,/imgGalaxia_320.ee0cd320.webp 3x,/imgGalaxia_160.26edab0c.webp 4x" src="/imgGalaxia.e25d503e.webp" width="640" height="360" alt="Noticias">
             <div id="countdown1" class="item--home__countdown"></div>
           </a>
         </figure>
@@ -50,14 +57,14 @@
       <div class="item--home">
         <figure class="item__figure">
           <a href="/enlaces.html" class="item__figure__a">Enlaces
-            <img loading="lazy" class="item__figure__img" srcset="/imgRocket.a81309a2.webp     4x,/imgRocket_640.e89c201d.webp 3x,/imgRocket_320.26c1cb8c.webp 2x,/imgRocket_160.8f1ca1e3.webp 1x" src="/imgRocket.a81309a2.webp" width="640" height="360" alt="Enlaces">
+            <img loading="lazy" class="item__figure__img" srcset="/imgRocket_160.8f1ca1e3.webp 4x,/imgRocket_320.26c1cb8c.webp 3x,/imgRocket_640.e89c201d.webp 2x,/imgRocket.a81309a2.webp     1x" src="/imgRocket.a81309a2.webp" width="640" height="360" alt="Enlaces">
           </a>
         </figure>
       </div>
       <div class="item--home">
         <figure class="item__figure">
           <a href="/sobrenosotros.html" class="item__figure__a">Sobre nosotros
-            <img loading="lazy" class="item__figure__img" srcset="/imgPassenger.3c53031f.webp     4x,/imgPassenger_640.7c29729b.webp 3x,/imgPassenger_320.997c39ef.webp 2x,/imgPassenger_160.7f9521af.webp 1x" src="/imgPassenger.3c53031f.webp" width="640" height="360" alt="Sobre nosotros">
+            <img loading="lazy" class="item__figure__img" srcset="/imgPassenger.3c53031f.webp     1x,/imgPassenger_640.7c29729b.webp 2x,/imgPassenger_320.997c39ef.webp 3x,/imgPassenger_160.7f9521af.webp 4x" src="/imgPassenger.3c53031f.webp" width="640" height="360" alt="Sobre nosotros">
           </a>
         </figure>
       </div>
@@ -80,7 +87,7 @@
           <a class="footer__a" href="/sobrenosotros.html">Sobre nosotros</a>
         </li>
       </ul>
-      <a href="/index.html"><img loading="lazy" class="header__img--home" src="/moonLogo.d10df8d8.webp" width="32" height="32" alt="Logo"></a>
+      <a href="/index.html"><img loading="lazy" class="header__img--home" srcset="/moonLogo.d10df8d8.webp    1x,/moonLogo_50.13f42a66.webp 2x,/moonLogo_75.1f5dd798.webp 3x" src="/moonLogo.d10df8d8.webp" alt="Logo"></a>
     </footer>
   <script src="/proyecto.356c6128.js"></script></body>
 </html>

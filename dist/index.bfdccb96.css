@@ -46,7 +46,7 @@
 }
 @media (min-width: 1025px) {
   .header--home .header__h1 {
-    top: -6%;
+    top: -3%;
   }
 }
 .header__img--home {
@@ -58,7 +58,14 @@
   width: 49%;
   background-color: #000000;
   margin-bottom: 1%;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
+  transition: width 2s, height 2s, background-color 2s, transform 1s;
+}
+.item--home:hover {
+  background-color: #000000;
+  height: 33vh;
+  width: 49%;
+  transform: rotate(10deg);
 }
 .clip-svg {
   clip-path: url(#myClip);
@@ -67,6 +74,9 @@
 }
 .clip-svg__text {
   font-size: 8vh;
+}
+.clip-img-svg {
+  clip-path: url(#myClipImgPlanets);
 }
 .item--home__countdown {
   position: absolute;
@@ -127,13 +137,13 @@
   font-size: 1.563em;
 }
 .item--viajes--spacex {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(spaceXBack.cc95cb2c.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(spaceXBack.311fe1a1.webp);
 }
 .item--viajes--blue-origin {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(blueOriginBack.334fc032.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(blueOriginBack.eb00b8f9.webp);
 }
 .item--viajes--virgin-galactic {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(virginGalacticBack.ea03a7c7.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(virginGalacticBack.d682721a.webp);
 }
 .item__ul__ul__li--viajes {
   border-bottom: 1px solid white;
@@ -160,20 +170,20 @@
   background-size: cover;
 }
 .item--detalle--factory {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), white), url(spaceXFactory.7f934566.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), white), url(spaceXFactory.824bdb08.jpeg);
 }
 .item--detalle--crewDragon {
   color: white;
 }
 .item--detalle--inspiration4 {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), white), url(spaceXInspiration4.41e3b9ad.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), white), url(spaceXInspiration4.6845505c.jpeg);
 }
 .item--detalle--nosotros {
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(nosotrosUniverse.0159a31f.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(nosotrosUniverse.e05d579c.webp);
 }
 .item--detalle--nosotros--imagen-cabecera {
-  background-image: url(nosotrosViaLactea.8bdada80.jpg);
+  background-image: url(nosotrosViaLactea.3c9afe33.webp);
   min-height: 500px;
   color: white;
   font-size: 3em;
